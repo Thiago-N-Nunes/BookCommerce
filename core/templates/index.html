@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <title>Book Commerce</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="{%static 'images/logo.png'%}" alt="Book Commerce" id="logo"></a>
+        <input type="text" placeholder="Qual livro deseja pesquisar" id="busca">
+        <button onclick="contato()">🔎</button>
+        <a href="{% url 'login'%}">Login</a>
+        <a href="{%url 'cadastro'%}" target="_blank">Cadastre-se</a>
+    </header>
+    <nav>
+        <ul><a href="{%url 'contato'%}">Contate-nos</a></ul>
+        <ul>Coleções</ul>
+        <ul>Promoções</ul>
+    </nav>
+    <div id="categorias">
+        <h3>Categorias</h3>
+        <ul><a href="#">Categoria</a></ul>
+        <ul><a href="#">Categoria</a></ul>
+        <ul><a href="#">Categoria</a></ul>
+        <ul><a href="#">Categoria</a></ul>
+    </div>
+    <section id="produtos">
+        <div class="livro">
+            <img src="#" alt="capa" class="capa">
+            <p><b>titulo</b></p>
+            <p>descrição</p>
+            <button>Comprar</button>
+            <button>Adicionar no carrinho</button>
+        </div>
+    </section>
+
+    <script src="{%static 'js/script.js'%}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+    <title>Login</title>
+</head>
+<body>
+    <a href="{%url 'inicio'%}">Voltar</a>
+    <h1>Login</h1>
+    <section id="login">
+        <form action="">
+            <label for="email_usuario">Digite o email Cadastrado</label>
+            <input type="email" name="email_usuario" id="email">
+            <input type="password">
+            <button>Fazer Login</button>
+        </form>
+    </section>
+</body>
+</html>
